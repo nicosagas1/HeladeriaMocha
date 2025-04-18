@@ -1,0 +1,81 @@
+<div class="container my-5">
+    <div class="card p-4 mx-auto shadow text-center" style="max-width: 500px; background-color: #ffffff; color: #333;">
+
+        <a href="{{ url_for('inicio') }}" class="d-block mb-4">
+            <span style="color: #333333;">🏠 VOLVER AL HOME</span>
+        </a>
+
+        <h1 class="h3 mb-3" style="color: #007BFF;">PÁGINA DE PEDIDOS</h1>
+
+        <p class="mb-3" style="color: #666;">Sucursales con Delivery</p>
+
+        <div class="mb-4">
+            <select class="form-select" style="background-color: #f8f9fa; color: #333;">
+                <option disabled selected>Elegí tu sucursal más cercana</option>
+                <option value="av.saenz1069">Av. Sáenz 1069</option>
+                <option value="av.saenz715">Av. Sáenz 715</option>
+            </select>
+        </div>
+
+        <h2 class="h5 mb-3 text-center" style="color: #007BFF;">¿QUÉ QUERÉS PEDIR?</h2>
+
+        <div class="d-flex justify-content-around mb-4">
+            <!-- Helados Section -->
+            <div class="text-center option-item" id="option-helados">
+                <input type="radio" class="form-check-input" name="deliveryMethod" id="check-helados" value="helados">
+                <label for="check-helados" class="custom-radio-label">
+                    <div class="icon-container">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/mocha-f0ceb.appspot.com/o/galeria%2Fenvios%2Fhelados.JPG?alt=media&token=c7e24ede-d3a0-4c15-94d4-521ed7113ab5" alt="Helados" width="60" height="60">
+                    </div>
+                    <span class="label-text" style="color: #333;">HELADOS</span>
+                </label>
+                <div class="size-options" id="helados-sizes">
+                    <button class="btn btn-outline-primary size-button mb-2" data-size="1kg">1kg</button>
+                    <button class="btn btn-outline-primary size-button mb-2" data-size="1/2kg">1/2kg</button>
+                    <button class="btn btn-outline-primary size-button" data-size="1/4kg">1/4kg</button>
+                </div>
+            </div>
+
+            <!-- Palitos Section -->
+            <div class="text-center option-item" id="option-palitos">
+                <input type="radio" class="form-check-input" name="deliveryMethod" id="check-palitos" value="palitos">
+                <label for="check-palitos" class="custom-radio-label">
+                    <div class="icon-container">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/mocha-f0ceb.appspot.com/o/galeria%2Fenvios%2Fpalitos.JPG?alt=media&token=2caaa25f-8b7e-437f-b109-35201eac6dcb" alt="Palitos" width="60" height="60">
+                    </div>
+                    <span class="label-text" style="color: #333;">PALITOS</span>
+                </label>
+            </div>
+        </div>
+
+        <h2 class="h5 mb-3" style="color: #007BFF;">NOSOTROS TE LO LLEVAMOS</h2>
+
+        <div class="form-check form-check-inline mb-4">
+            <label class="form-check-label" for="delivery" style="color: #333;">Delivery</label>
+        </div>
+
+        <h2 class="h5 mb-3" style="color: #007BFF;">DEJANOS TUS DATOS</h2>
+
+        <div class="mb-4">
+            <input type="text" placeholder="Nombre" class="form-control mb-3" style="background-color: #f8f9fa; color: #333;">
+            <input type="tel" placeholder="Celular" class="form-control mb-3" style="background-color: #f8f9fa; color: #333;">
+        </div>
+
+        <h2 class="h5 mb-3" style="color: #007BFF;">¿DÓNDE TE LO ENVIAMOS?</h2>
+
+        <div class="mb-4">
+            <select id="neighborhood" class="form-select mb-3" style="background-color: #f8f9fa; color: #333;">
+                <option disabled selected>Elegí tu barrio</option>
+              </select>
+              
+            <input type="text" placeholder="Dirección" class="form-control mb-3" style="background-color: #f8f9fa; color: #333;">
+        </div>
+
+        <p class="text-center mb-4" style="color: #888;">
+            MÁS CARGO DE DELIVERY.<br />
+            EL PEDIDO SE FINALIZARÁ EN CUALQUIER MOMENTO.
+        </p>
+
+        <button class="btn w-100" style="background-color: #007BFF; color: white;">FINALIZAR PEDIDO</button>
+    </div>
+</div>

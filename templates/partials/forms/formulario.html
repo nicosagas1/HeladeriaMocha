@@ -1,0 +1,36 @@
+<div class="modal fade" id="contactModalNovedades" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Formulario de Contacto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" enctype="multipart/form-data" action="/enviar-cv">
+                    <div class="mb-3">
+                        <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="nombreApellido" name="nombreApellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cv" class="form-label">CV (Documento PDF)</label>
+                        <input type="file" class="form-control" id="cv" name="cv" accept=".pdf" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dni" class="form-label">DNI</label>
+                        <input type="text" class="form-control" id="dni" name="dni" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Número de Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>

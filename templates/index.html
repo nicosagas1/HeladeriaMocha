@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- #region head -->
+    {% include "partials/layout/_headIndex.html" %}
+    <!-- #endregion -->
+
+    <body>
+
+        <!-- #region Navbar -->
+        {% include "partials/_navbar.html" %}
+        <!-- #endregion -->
+
+        <!-- #region Bienvenido -->
+        <header class="hero-section text-center" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/mocha-f0ceb.appspot.com/o/fondos%2Fhelado_frutilla.jpg?alt=media&token=8e793a42-b479-44c6-bfd7-bb07e41629c6'); background-size: 50%; background-position: center;">
+            <div class="container">
+                <h1 class="display-4" style="font-family: 'Poppins', sans-serif; font-size: 3.5rem; color: #FFFFFF; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Bienvenido a Heladeria Mocha</h1>
+                <p class="lead" style="font-family: 'Open Sans', sans-serif; font-size: 2rem; color: #EEEEEE; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">Las mejores helados y café en un solo lugar</p>
+                <a href="/menu" class="btn btn-light btn-lg mt-4">Ver Menú</a>
+            </div>
+        </header>
+        <!-- #endregion -->
+
+        <!-- #region Features Section -->
+        <section class="features-section py-5">
+            <div class="container">
+                <div class="row text-center">
+                    {% include "components/index/helados_artesanales/helados_artesanales.html" %}
+                    
+                    {% include "components/index/cafe_de_especialidad/cafe_de_especialidad.html" %}
+
+                    {% include "components/index/ambiente_cogedor/ambiente_cogedor.html" %}
+                </div>
+            </div>
+        </section>
+        <!-- #endregion -->    
+
+        <!-- #region Footer -->
+        {% include "partials/_footer.html" %}
+        <!-- #endregion -->
+
+        <!-- Bootstrap JS -->
+        {% include "partials/scripts/boostrapJs.html" %}
+        <!-- #endregion -->
+    </body>
+</html>

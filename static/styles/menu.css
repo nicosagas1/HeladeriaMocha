@@ -1,0 +1,162 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000000;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    ul li {
+        font-size: 0.9rem;
+    }
+}
+
+h4 {
+    margin-top: 50px; /* Añadir margen superior */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Modificaciones para los <li> dentro de .menu-container */
+.menu-container ul li { /* las letras del producto color */
+    background-color: #9161078a; /* Color de fondo gris claro */
+    border-radius: 10px;       /* Bordes redondeados */
+    padding: 10px;             /* Espacio interior */
+    display: inline-block;     /* Estilo similar a un span */
+    width: fit-content;        /* Ajusta el ancho al contenido */
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los títulos con borde blanco */
+.menu-container h4 {
+    font-size: 2rem;                 /* Tamaño de fuente más grande */
+    margin-bottom: 10px;
+    color: #000000;                  /* Color negro para el texto */
+    text-transform: uppercase;       /* Texto en mayúsculas */
+    font-weight: bold;               /* Texto más grueso */
+    text-align: center;              /* Centrar los títulos */
+    text-shadow: 2px 2px 0 #ffffff,  /* Borde blanco hacia la derecha e inferior */
+                 -2px 2px 0 #ffffff, /* Borde blanco hacia la izquierda e inferior */
+                 2px -2px 0 #ffffff, /* Borde blanco hacia la derecha y superior */
+                 -2px -2px 0 #ffffff; /* Borde blanco hacia la izquierda y superior */
+}
+
+.menu-container ul li:hover { /* señalar cada producto */
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Ajustar las columnas para que estén a cada lado */
+.column:first-child {
+    text-align: left;
+}
+
+.column:last-child {
+    text-align: right;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* #region Estilo de los enlaces de la barra de navegación */
+.nav-link {
+    
+    color: rgb(0, 0, 0) !important;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Estilo del botón "Pedidos Online" */
+.navbar-nav .btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Ajuste del espaciado entre los enlaces */
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px; /* Espaciado entre los elementos */
+}
+
+
+/* Añadir borde negro a las tarjetas */
+.features-section .card {
+    margin-bottom: 30px;
+    border: 2px solid black; /* Borde negro de 2 píxeles */
+    border-radius: 15px; /* Mantener esquinas redondeadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mantener el efecto hover */
+.features-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Añadir sombra */
+}
+
+/* #endregion */
+
+
+/* #region footer */
+.social-link {
+    margin: 0 8px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #007bff; /* Cambia a un color de hover */
+}
+
+footer p {
+    font-size: 20px;
+    color: #666;
+}
+
+footer svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+/* O solo a un elemento específico */
+.footer-text {
+    font-family: 'Itim', cursive;
+}
+/* #endregion */

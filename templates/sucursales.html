@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- #region head -->
+    {% include "partials/layout/_headSucursales.html" %}
+    <!-- #endregion -->
+
+    <body>
+
+        <!-- #region Navbar -->
+        {% include "partials/_navbar.html" %}
+        <!-- #endregion -->
+
+        <!-- Nuestras Sucursales en el centro -->
+        <div class="container mt-5">
+            
+            <!-- #region sucursal 1 y 2 -->
+                {% include "components/sucursales/nuestro_sucursales/nuestro_sucursales.html" %}
+            <!-- #endregion -->        
+        
+            <!-- Contáctanos en el centro debajo de las sucursales -->
+            {% include "components/sucursales/contactanos/contactanos.html" %}
+            
+            <!-- #region formulario contactanos -->
+            {% include "partials/forms/contactanos.html" %}
+            <!-- #endregion -->
+        </div>
+        
+        <!-- #region Footer -->
+        {% include "partials/_footer.html" %}
+        <!-- #endregion -->
+
+        <!-- #region Bootstrap JS -->
+        {% include "partials/scripts/boostrapJs.html"%}
+        <!-- #endregion -->
+    </body>
+</html>

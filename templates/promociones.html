@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- #region head -->
+    {% include "partials/layout/_headPromociones.html" %}
+    <!-- #endregion -->
+
+    <body>
+
+        <!-- #region Navbar -->
+        {% include "partials/_navbar.html" %}
+        <!-- #endregion -->
+
+        <!-- Título de la página -->
+        <div class="container mt-5 page-title">
+            <h1>Promociones</h1>
+            <p>Descubre nuestras promociones exclusivas para ti</p>
+        </div>
+
+        <!-- #region Sección de Promociones -->
+        <div class="container mt-4">
+            <div class="row">
+                
+                {% include "components/promociones/cuartos/cuartos.html" %}
+                {% include "components/promociones/medios/medios.html" %}
+                {% include "components/promociones/kilos/kilos.html" %}
+                {% include "components/promociones/cucuruchos/cucuruchos.html" %}
+                {% include "components/promociones/vasitos/vasitos.html" %}
+                {% include "components/promociones/martes/martes.html" %}
+
+            </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region Footer -->
+        {% include "partials/_footer.html" %}
+        <!-- #endregion -->
+         
+        <!-- #region Bootstrap JS -->
+        {% include "partials/scripts/boostrapJs.html" %}
+        <!-- #endregion -->
+    </body>
+</html>

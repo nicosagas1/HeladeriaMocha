@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- #region head -->
+    {% include "partials/layout/_headNosotros.html"%}
+    <!-- #endregion -->
+
+    <body>
+        <!-- #region Navbar -->
+        {% include "partials/_navbar.html" %}
+        <!-- #endregion -->
+
+        <!-- #region imagen e historia Section -->
+        <section class="container my-5">
+            <div class="row align-items-center">
+                <!-- #region imagen y historia Section -->
+                {% include "/components/nosotros/historialSection.html" %}
+                <!-- #endregion -->
+            </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region Footer -->
+        {% include "partials/_footer.html" %}
+        <!-- #endregion -->
+            
+        <!-- #region Bootstrap JS -->
+        {% include "partials/scripts/boostrapJs.html" %}
+        <!-- #endregion -->
+    </body>
+</html>

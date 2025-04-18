@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!--#region head -->
+    {% include "partials/layout/_headTrabajar_en_Mocha.html" %}
+    <!-- #endregion -->
+
+    <body>
+
+        <!-- #region Navbar -->
+        {% include "partials/_navbar.html" %}
+        <!-- #endregion -->
+
+        {% if aviso %}
+        <div class="aviso">
+            <p>{{ aviso }}</p>
+        </div>
+        {% endif %}
+        
+        <!-- #region Fila con texto -->
+        {% include "components/trabajar_en_mocha/filaConTexto/filaConTexto.html" %}
+        <!-- #endregion -->
+
+        <!-- #region Formulario Bootstrap -->
+        {% include "partials/forms/formulario.html" %}
+        <!-- #endregion -->
+        
+        <!-- #region Sección de Acordeón -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="accordion mb-5" id="accordionMocha">
+                    <!-- #region Clave del negocio -->
+                    {% include "components/trabajar_en_mocha/claveNegocios/claveNegocios.html" %}
+                    <!-- #endregion -->
+
+                    <!-- #region Datos de la franquicia -->
+                    {% include "components/trabajar_en_mocha/franquicia/franquicia.html" %}
+                    <!-- #endregion -->
+                </div>
+            </div>
+        </div>
+        <!-- #endregion -->
+        </div>
+
+        <!-- #region Footer -->
+        {% include "partials/_footer.html" %}
+        <!-- #endregion -->
+
+        <!-- #region Bootstrap JS -->
+        {% include "partials/scripts/boostrapJs.html"%}
+        <!-- #endregion -->
+    </body>
+</html>

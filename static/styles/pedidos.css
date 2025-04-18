@@ -1,0 +1,67 @@
+/* #region Estilo de los enlaces de la barra de navegación */
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #E5007D; /* Color rosado al pasar el mouse */
+    text-decoration: none;
+}
+
+/* Estilo del botón "Pedidos Online" */
+.navbar-nav .btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Ajuste del espaciado entre los enlaces */
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px; /* Espaciado entre los elementos */
+}
+
+
+/* Añadir borde negro a las tarjetas */
+.features-section .card {
+    margin-bottom: 30px;
+    border: 2px solid black; /* Borde negro de 2 píxeles */
+    border-radius: 15px; /* Mantener esquinas redondeadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* #endregion */
+
+/* #region footer */
+.social-link {
+    margin: 0 8px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #007bff; /* Cambia a un color de hover */
+}
+
+footer p {
+    font-size: 20px;
+    color: #666;
+}
+
+footer svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+/* O solo a un elemento específico */
+.footer-text {
+    font-family: 'Itim', cursive;
+}
+/* #endregion */
+

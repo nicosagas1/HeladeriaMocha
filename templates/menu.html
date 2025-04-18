@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- #region head-->
+    {% include "partials/layout/_headMenu.html" %}
+    <!-- #endregion -->
+     
+    <body>
+        <!-- #region Navbar -->
+        {% include "partials/_navbar.html" %}
+        <!-- #endregion -->
+
+        <!-- #region imagen section -->
+        <section class="menu-section py-5" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/mocha-f0ceb.appspot.com/o/fondos%2Fmenu.jpg?alt=media&token=34e5f927-17f5-48d1-a989-5439dc02f15a'); background-size: cover; background-position: center; min-height: 100vh;">
+        <!-- #endregion -->
+            <div class="container">
+                <!-- #region Menu Section -->
+                <h2 class="text-center mb-5" style="background-color: #007bff; color: white; padding: 20px 0;">Nuestro Menú</h2>
+                <!-- #endregion -->
+        
+                <!-- #region Helados -->
+                <div class="menu-section">
+                    <div class="menu-container">
+                        <div class="column">
+                        
+                        {% include "components/menu/helados/chocolates.html" %}
+                        
+                        {% include "components/menu/helados/dulce_de_leche.html" %}
+
+                        {% include "components/menu/helados/crema_clasicas.html" %}
+
+                        {% include "components/menu/helados/cremas_varias.html" %}
+                    </div>
+
+                    <div class="column">
+                       
+                        {% include "components/menu/helados/cremas_frutales.html" %}
+
+                        {% include "components/menu/batidos/batidos.html" %}
+                        
+                        {% include "components/menu/palitos/palitos_de_helados.html" %}
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </div>    
+        </section>
+
+         <!-- #region Footer -->
+         {% include "partials/_footer.html" %}
+        <!-- #endregion -->
+
+        <!-- #region Bootstrap JS -->
+        {% include "partials/scripts/boostrapJs.html" %}
+        <!-- #endregion -->
+    </body>
+</html>
