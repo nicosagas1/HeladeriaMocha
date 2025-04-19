@@ -73,5 +73,5 @@ def enviar_cv():
         # Redirigir a una página de éxito o de confirmación
         return render_template("trabajar_en_mocha.html", aviso=aviso)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+def app():
+    app.run()
