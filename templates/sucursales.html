@@ -11,6 +11,12 @@
         {% include "partials/_navbar.html" %}
         <!-- #endregion -->
 
+        {% if aviso %}
+        <div class="aviso">
+            <p>{{ aviso }}</p>
+        </div>
+        {% endif %}
+        
         <!-- Nuestras Sucursales en el centro -->
         <div class="container mt-5">
             
